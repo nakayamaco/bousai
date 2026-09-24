@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>薬の備え、できていますか？ 薬剤師会 災害対策パンフレット</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --bg:#f4f8f5; --paper:#ffffff; --ink:#1c2b27; --sub:#4d605a;
+  --green:#1f7a5c; --green-d:#14523d; --tint:#e2f0e8; --amber:#f2b134; --line:#c9d9d0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1a16; --paper:#16241f; --ink:#e8f1ec; --sub:#a8bab2;
+    --green:#4cc296; --green-d:#0f3a2b; --tint:#1c3329; --amber:#f2b134; --line:#2c4439;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1a16; --paper:#16241f; --ink:#e8f1ec; --sub:#a8bab2;
+  --green:#4cc296; --green-d:#0f3a2b; --tint:#1c3329; --amber:#f2b134; --line:#2c4439;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+  line-height:1.8;font-size:16px}
+.sheet{max-width:860px;margin:0 auto;background:var(--paper)}
+.ph{background:var(--amber);color:#1c2b27;padding:0 .3em;border-radius:3px;font-weight:700}
+
+/* cover */
+.cover{background:var(--green-d);color:#fff;padding:48px 36px 40px;border-bottom:8px solid var(--amber)}
+.cover .org{font-size:.95rem;opacity:.9;margin:0 0 20px}
+.cover h1{font-size:clamp(2.2rem,8vw,3.6rem);line-height:1.25;margin:0 0 16px;font-weight:900;letter-spacing:.02em}
+.cover p.lead{font-size:1.1rem;margin:0;max-width:34em}
+
+section{padding:36px 36px 8px}
+h2{font-size:1.5rem;margin:0 0 6px;font-weight:900;color:var(--green);line-height:1.4}
+h2 + p.note{margin:0 0 18px;color:var(--sub);font-size:.95rem}
+h3{font-size:1.1rem;margin:0 0 4px;font-weight:700}
+p{margin:0 0 12px}
+
+/* three requests */
+.asks{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid var(--green);border-radius:6px;overflow:hidden}
+.asks > div{padding:18px 18px 8px}
+.asks > div + div{border-left:2px solid var(--green)}
+.asks h3{color:var(--green)}
+.asks p{font-size:.93rem;color:var(--sub)}
+
+/* checklist */
+.check{background:var(--tint);border-radius:10px;padding:22px 24px;margin-top:6px}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 32px}
+.cols h3{margin:10px 0 6px;color:var(--green)}
+.cols ul{list-style:none;margin:0;padding:0}
+.cols li{position:relative;padding:2px 0 2px 30px;font-size:.96rem}
+.cols li::before{content:"";position:absolute;left:0;top:.55em;width:16px;height:16px;border:2px solid var(--green);border-radius:3px;background:var(--paper)}
+.small{font-size:.85rem;color:var(--sub);margin-top:12px}
+
+/* role */
+.role{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px}
+.role div{border-left:5px solid var(--amber);padding:2px 0 2px 14px}
+.role p{font-size:.93rem;color:var(--sub);margin:0}
+
+/* health */
+.health dl{margin:0;display:grid;grid-template-columns:9em 1fr;gap:0}
+.health dt,.health dd{margin:0;padding:10px 0;border-top:1px solid var(--line)}
+.health dt{font-weight:700;color:var(--green)}
+.health dd{font-size:.95rem}
+
+/* booth */
+.booth{background:var(--green-d);color:#fff;margin-top:32px;padding:28px 36px 30px}
+.booth h2{color:#fff}
+.booth ul{margin:0 0 14px;padding-left:1.2em}
+.booth .info{border-top:1px solid rgba(255,255,255,.35);padding-top:12px;font-size:.95rem}
+.booth a{color:#fff;text-decoration:underline;word-break:break-all}
+.foot{padding:16px 36px 28px;font-size:.8rem;color:var(--sub)}
+
+@media (max-width:640px){
+  .cover,section,.booth,.foot{padding-left:20px;padding-right:20px}
+  .asks{grid-template-columns:1fr}
+  .asks > div + div{border-left:0;border-top:2px solid var(--green)}
+  .cols,.role{grid-template-columns:1fr}
+  .health dl{grid-template-columns:1fr}
+  .health dt{border-bottom:0;padding-bottom:0}
+  .health dd{border-top:0;padding-top:0}
+}
+@media print{
+  @page{size:A4;margin:8mm}
+  body{background:#fff;font-size:10.5pt;line-height:1.6;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sheet{max-width:none}
+  section{padding:14px 18px 4px;break-inside:avoid}
+  .cover{padding:22px 18px}
+  .booth,.foot{padding-left:18px;padding-right:18px}
+  .booth{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+
+<header class="cover">
+  <p class="org">公益社団法人石川県薬剤師会　いしかわ防災フェア2026　ご来場の皆さまへ</p>
+  <h1>薬の備え、<br>できていますか？</h1>
+  <p class="lead">災害のとき、いつもの薬が手元にないと、体調は思った以上に早く崩れます。薬剤師が、家庭でできる備えと、災害時の私たちの役割をご紹介します。</p>
+</header>
+
+<section>
+  <h2>まず、この3つだけ</h2>
+  <p class="note">全部やろうとしなくて大丈夫です。今日から始められることを選びました。</p>
+  <div class="asks">
+    <div>
+      <h3>お薬手帳を持ち歩く</h3>
+      <p>紙の手帳でも電子版でもOK。表紙や薬の一覧をスマホで撮影しておくと、手帳をなくしても説明できます。</p>
+    </div>
+    <div>
+      <h3>薬は少し余裕を持つ</h3>
+      <p>飲み切る前に受診・受け取りをして、手元に数日分の予備を。必要な日数は、かかりつけの医師・薬剤師に相談を。</p>
+    </div>
+    <div>
+      <h3>自分の薬を言えるように</h3>
+      <p>病名、薬の名前、飲み方、アレルギーや副作用の経験をメモに。家族の分もまとめておくと安心です。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>非常持ち出し袋の「薬・衛生」チェックリスト</h2>
+  <p class="note">お持ち帰りのうえ、□にチェックしながら確認してください。</p>
+  <div class="check">
+    <div class="cols">
+      <div>
+        <h3>毎日の薬まわり</h3>
+        <ul>
+          <li>普段飲んでいる薬（予備を含む）</li>
+          <li>お薬手帳、またはそのコピー・写真</li>
+          <li>薬の名前・飲み方を書いたメモ</li>
+          <li>インスリンなど冷所保管の薬の保冷用品</li>
+          <li>吸入薬・点眼薬・貼り薬の予備</li>
+        </ul>
+      </div>
+      <div>
+        <h3>常備薬</h3>
+        <ul>
+          <li>解熱鎮痛薬</li>
+          <li>胃腸薬・整腸薬・下痢止め・便秘薬</li>
+          <li>かぜ薬・鼻炎薬・かゆみ止め</li>
+          <li>目薬・保湿剤・虫よけ</li>
+        </ul>
+      </div>
+      <div>
+        <h3>けが・衛生用品</h3>
+        <ul>
+          <li>絆創膏・ガーゼ・テープ・消毒液</li>
+          <li>体温計・使い捨て手袋</li>
+          <li>マスク・手指消毒剤・ウェットティッシュ</li>
+          <li>歯ブラシ・口腔ケア用品</li>
+        </ul>
+      </div>
+      <div>
+        <h3>ご家族に合わせて</h3>
+        <ul>
+          <li>乳幼児：普段の薬、おむつ、体温計</li>
+          <li>高齢の方：入れ歯用品、常用薬の一覧</li>
+          <li>女性：生理用品、妊娠中は母子手帳</li>
+          <li>アレルギーのある方：対応食品・薬の情報</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small">※使用期限は年に1回（防災の日など）に点検しましょう。※薬は自己判断で量を変えたり中止したりせず、迷ったら薬剤師にご相談ください。</p>
+  </div>
+</section>
+
+<section>
+  <h2>災害のとき、薬剤師はこんな活動をします</h2>
+  <p class="note">地域や災害の状況によって内容は異なります。</p>
+  <div class="role">
+    <div><h3>医薬品の供給と管理</h3><p>避難所・救護所への医薬品の搬入、仕分け、在庫管理をします。地域によっては、調剤設備を備えた「モバイルファーマシー」も出動します。</p></div>
+    <div><h3>お薬の相談・調剤</h3><p>薬をなくした、飲み方がわからないなどのご相談に応じます。お薬手帳や写真があると、より早く対応できます。</p></div>
+    <div><h3>避難所の衛生を守る</h3><p>手洗い・消毒、トイレや水まわりの衛生、感染症や食中毒の予防について助言します。</p></div>
+    <div><h3>医療チームとの連携</h3><p>医師・看護師・行政などと情報を共有し、必要な薬が必要な方に届くよう調整します。</p></div>
+  </div>
+</section>
+
+<section class="health">
+  <h2>避難生活で気をつけたい体調のこと</h2>
+  <p class="note">薬だけでなく、日々の過ごし方も大切です。</p>
+  <dl>
+    <dt>水分をとる</dt><dd>トイレを気にして控えがちですが、脱水や熱中症、血栓の原因になります。こまめにとりましょう。</dd>
+    <dt>足を動かす</dt><dd>車内や狭い場所で長く座ると、エコノミークラス症候群の危険があります。足首を回す、歩くなどを心がけて。</dd>
+    <dt>口をきれいに</dt><dd>断水時も、ウェットシートやマウスウォッシュで口の中を清潔に。高齢の方の肺炎予防にもつながります。</dd>
+    <dt>手洗い・消毒</dt><dd>食事の前、トイレの後は特に。水が少ないときは、汚れをふき取ってから消毒剤を使います。</dd>
+    <dt>眠れない・つらいとき</dt><dd>不安や不眠は自然な反応です。我慢せず、薬剤師や救護スタッフに声をかけてください。</dd>
+  </dl>
+</section>
+
+<div class="booth">
+  <h2>薬剤師会ブースへお立ち寄りください</h2>
+  <ul>
+    <li>お薬手帳・電子お薬手帳の使い方相談</li>
+    <li>持ち出し薬・常備薬の備えチェック</li>
+    <li>体験コーナー：モバイルファーマシー</li>
+  </ul>
+  <div class="info">
+    <p>ブース：いしかわ防災フェア2026　産業展示館1号館内</p>
+    <p style="margin:0">公益社団法人石川県薬剤師会<br>
+    石川県金沢市広岡町イ25番地10<br>
+    TEL：076-231-6634　／　FAX：076-223-1520<br>
+    HP：<a href="https://www.ishikawakenyaku.com/">https://www.ishikawakenyaku.com/</a></p>
+  </div>
+</div>
+
+<footer class="foot">
+  このパンフレットは一般的な情報をまとめたものです。個別の薬や病状については、かかりつけの医師・薬剤師にご相談ください。
+</footer>
+
+</main>
+</body>
+</html>
